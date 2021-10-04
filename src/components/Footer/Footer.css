@@ -1,10 +1,9 @@
-
-.bg{
-    background-color: rgb(168, 216, 238);
-}
 .footer {
-    clear: both;
-    position: relative;
-    height: 200px;
-    margin-top: -200px;
-}
+    margin-top: auto;
+    position:static;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(168, 216, 238);
+    text-align: center;
+ }

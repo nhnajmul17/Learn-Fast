@@ -5,12 +5,12 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => {
     return (
-        <div className='bg'>
+        <div className='footer'>
 
             <div className='d-flex justify-content-evenly'>
                 <div>
                     <h1 className='fs-1'>Learn <span className='text-danger'>Fast</span></h1>
-                    <p>5/c,Motijeel,Dhaka</p>
+                    <p>5/C,Motijeel,Dhaka</p>
                     <h6>Phone: <FontAwesomeIcon icon={faPhone} className='text-warning' /> +880-5468752</h6>
 
                 </div>
