@@ -2,9 +2,10 @@ import React from 'react';
 import { Button, Card, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
+import Rating from 'react-rating';
 
 const Course = (props) => {
-    const { Title, picture, duration, price, name, role, enrolled } = props.course
+    const { Title, picture, duration, price, name, role, enrolled, rating } = props.course
     return (
         <Col>
             <Card className='h-100'>
@@ -18,6 +19,13 @@ const Course = (props) => {
                             </div>
                             <div>
                                 <h3 className='text-secondary'>Price: ${price}</h3>
+                                <Rating
+                                    className='text-warning'
+                                    initialRating={rating}
+                                    readonly
+                                    emptySymbol="far fa-star"
+                                    fullSymbol="fas fa-star"
+                                />
                             </div>
                         </div>
                         <h3 className='text-info'>Enrolled:  <FontAwesomeIcon icon={faUser} />  {enrolled}</h3>

@@ -9,10 +9,9 @@ const About = () => {
             <p>
                 Our curriculum includes- <br />
                 * Live classes <br />
-                * Timed testsbr <br />
-
+                * Timed tests <br />
                 * Live feedback session <br />
-                * Problem Discussion chat room
+                * Problem Discussion Chat room
             </p>
         </div>
     );

@@ -6,15 +6,15 @@ const Feature = (props) => {
 
     const history = useHistory()
     const handleSeeCourse = () => {
-        history.push('./services')
+        history.push('./courses')
     }
-    const { Title, picture, rating } = props.course
+    const { Title, picture, rating, price } = props.course
     return (
         <div>
-            <Col>
+            <Col className='h-100'>
                 <Card className='h-100'>
                     <div className='d-flex justify-content-center '>
-                        <div className='p-4'>
+                        <div className='p-4 w-100 h-100'>
                             <Card.Img variant="top" className='h-100 w-100' src={picture} />
 
                         </div>
@@ -23,6 +23,7 @@ const Feature = (props) => {
                                 <Card.Title className='fs-4 text-success'>{Title}</Card.Title>
 
                                 <Card.Text>
+                                    <p>Price: ${price}</p>
                                     <Rating
                                         className='text-warning'
                                         initialRating={rating}
@@ -30,10 +31,12 @@ const Feature = (props) => {
                                         emptySymbol="far fa-star"
                                         fullSymbol="fas fa-star"
                                     />
-                                    <Button variant='warning' onClick={handleSeeCourse} className='h-25 w-100'>See Course</Button>
                                 </Card.Text>
                             </Card.Body>
                         </div>
+                    </div>
+                    <div>
+                        <Button variant='warning' onClick={handleSeeCourse} className='mb-3'>See Course</Button>
 
                     </div>
 

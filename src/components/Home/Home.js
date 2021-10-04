@@ -7,18 +7,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
 import { useHistory } from 'react-router';
 import Feature from '../Feature/Feature';
+import Service from '../Service/Service';
 
 const Home = () => {
     const [feature, setFeature] = useState([])
+    const [services, setServices] = useState([])
     useEffect(() => {
         fetch('./services.json')
             .then(res => res.json())
-            .then(data => setFeature(data.slice(1, 5)))
+            .then(data => setServices(data.slice(0, 4)))
+    }, [])
+    useEffect(() => {
+        fetch('./services.json')
+            .then(res => res.json())
+            .then(data => setFeature(data.slice(5, 9)))
     }, [])
 
     const history = useHistory()
     const handleEnroll = () => {
-        history.push('/services')
+        history.push('/courses')
     }
     return (
         <div>
@@ -35,8 +42,21 @@ const Home = () => {
                     <img src={img} alt="" />
                 </div>
             </div>
-            <div className='p-5'>
-                <h3 className='text-success mb-5'>Featured Course</h3>
+            <div className='p-3 mt-2'>
+                <h3 className='text-dark mb-5 fs-1'>Why <span className='text-dark'>Learn</span><span className='text-danger'>Fast</span></h3>
+                <Row xs={1} md={4} className="g-4">
+                    {
+                        services.map(service => <Service
+                            key={service._id}
+                            service={service}
+                        ></Service>)
+                    }
+                </Row>
+
+
+            </div>
+            <div className='p-3'>
+                <h3 className='text-success fs-2 mb-5'>Featured Courses</h3>
                 <Row xs={1} md={3} className="g-4">
                     {
                         feature.map(course => <Feature
