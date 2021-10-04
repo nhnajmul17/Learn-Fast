@@ -8,7 +8,7 @@ const Course = (props) => {
     return (
         <Col>
             <Card className='h-100'>
-                <Card.Img variant="top" className='h-50 w-auto rounded' src={picture} />
+                <Card.Img variant="top" src={picture} />
                 <Card.Body>
                     <Card.Title className='text-warning fs-3'>{Title}</Card.Title>
                     <Card.Text>
