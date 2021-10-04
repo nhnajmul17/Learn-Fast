@@ -8,7 +8,8 @@
     "name": "Kane Mullins",
     "gender": "male",
     "Title": "Complete Html & CSS In One Course",
-    "role": "Frontend"
+    "role": "Frontend",
+    "rating": 4
   },
   {
     "_id": "615a9e3ccb5cb7ef7286ac48",
@@ -19,7 +20,8 @@
     "name": "Nolan Vinson",
     "gender": "male",
     "Title": "Business Plan Course",
-    "role": "Business"
+    "role": "Business",
+    "rating": 3
   },
   {
     "_id": "615a9e3c56141fcdc0935c7e",
@@ -30,7 +32,8 @@
     "name": "Harrison Dodson",
     "gender": "male",
     "Title": "Complete Python Course",
-    "role": "Python"
+    "role": "Python",
+    "rating": 4.5
   },
   {
     "_id": "615a9e3c3bac6aca17739280",
@@ -41,7 +44,8 @@
     "name": "Rosales Carrillo",
     "gender": "male",
     "Title": "Complete SEO Training",
-    "role": "SEO"
+    "role": "SEO",
+    "rating": 4
   },
   {
     "_id": "615a9e3c853bcdbed1b38206",
@@ -52,7 +56,8 @@
     "name": "Solomon Brewer",
     "gender": "male",
     "Title": "Adobe Crash Course",
-    "role": "Design"
+    "role": "Design",
+    "rating": 2.5
   },
   {
     "_id": "615a9e3c40bdd5578df6c902",
@@ -63,7 +68,8 @@
     "name": "Mueller Hurst",
     "gender": "male",
     "Title": "Business Case Study",
-    "role": "Business"
+    "role": "Business",
+    "rating": 3
   },
   {
     "_id": "615a9e3c234f87cdf174aa95",
@@ -74,7 +80,8 @@
     "name": "Molly Wynn",
     "gender": "female",
     "Title": "JavaScript For Complete Begginers",
-    "role": "Development"
+    "role": "Development",
+    "rating": 3.5
   },
   {
     "_id": "615a9e3ca9b271137a44949b",
@@ -85,7 +92,8 @@
     "name": "Maribel Delgado",
     "gender": "female",
     "Title": "Adobe Illustrator full Course",
-    "role": "Design"
+    "role": "Design",
+    "rating": 3
   },
   {
     "_id": "615a9e3ca0517c736701bdcc",
@@ -96,7 +104,8 @@
     "name": "Ina Blackburn",
     "gender": "female",
     "Title": "Web Development Full stack",
-    "role": "Development"
+    "role": "Development",
+    "rating": 4.5
   },
   {
     "_id": "615a9e3cedc74471c9de735b",
@@ -107,6 +116,7 @@
     "name": "Francesca Middleton",
     "gender": "female",
     "Title": "Easy Python Learning Course",
-    "role": "Python"
+    "role": "Python",
+    "rating": 4.5
   }
 ]
