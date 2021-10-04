@@ -1,4 +1,5 @@
-#LearnFast
+# LearnFast
+
 Live Server of this Project(https://learn-fast.netlify.app/)
 
 Learnfast is a self learning platform that offers various digital courses. Our mission is to prepare the next generation suitable enough to face modern challenges. Here our courses are designed with the help of experts and being continuously updated so that no one lags behind knowledge.
