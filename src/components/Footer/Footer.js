@@ -16,7 +16,7 @@ const Footer = () => {
                 </div>
                 <div>
                     <h3 className='text-secondary'>Follow Us</h3>
-                    <i class="fab fa-facebook text-primary fs-4 me-2"></i> <i class="fab fa-youtube text-danger fs-4 me-2"></i> <i class="fab fa-twitter text-info fs-4"></i>
+                    <i className="fab fa-facebook text-primary fs-4 me-2"></i> <i className="fab fa-youtube text-danger fs-4 me-2"></i> <i className="fab fa-twitter text-info fs-4"></i>
                 </div>
             </div>
             <p className='text-center'> <small>&copy;2021 All right reserved by Learn<span className='text-danger'>Fast</span> </small></p>

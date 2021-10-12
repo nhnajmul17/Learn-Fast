@@ -2,7 +2,11 @@ import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
+import useFirebase from '../../hooks/useFirebase';
+
 const Header = () => {
+    const { user, logOut } = useAuth();
     const history = useHistory();
     const handleSignin = () => {
         history.push('/login')
@@ -26,8 +30,13 @@ const Header = () => {
 
                         </Nav>
                         <Nav>
-                            <Button onClick={handleSignin} variant='danger me-2'>Signin</Button>
-                            <Button onClick={handleSignup} variant='secondary'>Sign Up</Button>
+                            <p className='text-white me-5'>{user.email}</p>
+
+                            {user.email ? <button onClick={logOut}>LogOut</button>
+                                :
+                                <Button onClick={handleSignin} variant='danger me-2'>Signin</Button>}
+                            {user.email ? <button disabled></button>
+                                : <Button onClick={handleSignup} variant='secondary'>Sign Up</Button>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
